@@ -1,6 +1,9 @@
 import torch
 import numpy as np
 
+from score.score import scoring_board
+
+scorer = scoring_board(r2_weights=[0.2,0.2,0.2,0.2,0.2])
 
 
 def validate_epoch(model,dataloader,criterion,device):
