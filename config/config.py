@@ -9,7 +9,7 @@ class CONFIG:
     train_path: Path = Path("/kaggle/input/csiro-biomass/train.csv")
     train_img: Path = Path("/kaggle/input/csiro-biomass/train")
     state = 42
-    model = ""
+    model = "vit_huge_plus_patch16_dinov3.lvd1689m"
     folds = 5
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     batch_size = 16
